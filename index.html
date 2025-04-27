@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	
+	<script>
+        	/*
+       	 	@licstart  The following is the entire license notice for the
+	        JavaScript code in this page.
+	
+	        Copyright (C) 2025 Lucas Rufkahr
+	
+	        The JavaScript code in this page is free software: you can
+	        redistribute it and/or modify it under the terms of the GNU
+	        General Public License (GNU GPL) as published by the Free Software
+	        Foundation, either version 3 of the License, or (at your option)
+        	any later version.  The code is distributed WITHOUT ANY WARRANTY;
+	        without even the implied warranty of MERCHANTABILITY or FITNESS
+        	FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+	
+        	As additional permission under GNU GPL version 3 section 7, you
+	        may distribute non-source (e.g., minimized or compacted) forms of
+        	that code without the copy of the GNU GPL normally required by
+	        section 4, provided you include this license notice and a URL
+        	through which recipients can access the Corresponding Source.
+	
+	
+	        @licend  The above is the entire license notice
+	        for the JavaScript code in this page.
+        	*/
+	</script>
+
+	<style>
+		* {
+			font-family: serif;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			padding: 0.5em;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-areas:
+				`n h h h h n`
+				`n b b b b n`
+				`n f f f f n`;
+		}
+	
+		header {
+			grid-area: h;
+			margin: 2%;
+		}
+		
+		.load-body {
+			grid-area: b;
+			padding: 0.8em;
+			margin: 2%;
+		}
+		
+		footer {
+			grid-area: f;
+			margin: 2%;
+		}
+
+		p {
+			font-size: 1.2em;
+		}
+
+		button {
+			font-size: 1em;
+		}
+
+		.site-page {
+			font-weight: bold;
+			font-size: 0.5em;
+		}
+
+        </style>
+</head>
+<body class=grid-container">
+	<noscript>This site requries javascript... It is libre though!</noscript>
+	<header class="load-header"></header>
+	<div class="load-body"></div>
+	<footer class="load-footer"></footer>
+	<script src="https://lukerufkahr.com/js/view.js"></script>
+</body>

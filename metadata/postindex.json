@@ -1,0 +1,12 @@
+{
+	"posts": [
+		{
+			"title": "First Post",
+			"file": "firstpost.html"
+		},
+		{
+			"title": "Second Post",
+			"file": "secondpost.html"
+		}
+	]
+}
