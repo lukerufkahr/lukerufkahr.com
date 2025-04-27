@@ -25,7 +25,7 @@ async function loadPage(file, element = siteBody) {
 		metadata = JSON.parse(metadata.trim());
 		
 		//sets the metadata to the page
-		//(document.getElementsByClassName('$title'))[0].innerHTML = metadata.title;
+		(document.getElementsByClassName('$title'))[0].innerHTML = metadata.title;
 		(document.getElementsByClassName('$created'))[0].innerHTML = metadata.created;
 		(document.getElementsByClassName('$edited'))[0].innerHTML = metadata.edited;
 
