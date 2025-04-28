@@ -13,7 +13,7 @@ async function posts() {
 		var a = document.createElement('a');
 			
 		a.innerHTML = metadata.posts[i].title;
-		a.href = "#"
+		a.setAttribute('style', "color:green");
 		a.setAttribute('onclick', "loadPage('posts/"+metadata.posts[i].file+"')");
 
 		li.appendChild(a);

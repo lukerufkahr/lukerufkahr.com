@@ -3,12 +3,16 @@ var siteHeader = document.getElementsByClassName('load-header');
 var siteFooter = document.getElementsByClassName('load-footer');
 var siteBody = document.getElementsByClassName('load-body');
 var sitePage = document.getElementsByClassName('site-page');
+var siteLocation = window.location.href;
+
+if (siteLocation === "https://lukerufkahr.com/" || siteLocation === "https://lukerufkahr.com/#") { siteLocation = "views/home.html";}
+else { siteLocation = (window.location.href).replace("https://lukerufkahr.com/#", "");}
 
 //Loads the initial view
 loadPage("snippets/header.html", siteHeader);
 loadPage("snippets/footer.html", siteFooter);
+loadPage(siteLocation);
 
-loadPage("views/home.html");
 //takes two arguments, a file, and an element
 async function loadPage(file, element = siteBody) {
 	//element[0].innerHTML = "";
@@ -38,6 +42,8 @@ async function loadPage(file, element = siteBody) {
 			//appendChild is needed for the browser to execute the script
 			siteBody[0].appendChild(script);
 		}
+
+		window.location.href = "#"+file;
 	}
 }
 
